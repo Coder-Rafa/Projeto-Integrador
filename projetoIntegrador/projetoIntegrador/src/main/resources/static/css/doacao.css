@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(35, 121, 92);
+    color: white;
+}
+
+img {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+    border-radius: 50px;
+}
+
+h1 {
+    font-size: 60pt;
+    text-align: center;
+}
+
+tr > * {
+    border: solid rgb(7, 53, 38) 1px;
+    padding: 10px;
+    margin: 5px;
+}
+
+input {
+    border-radius: 5px;
+    border: solid rgb(7, 53, 38) 1px;
+    width: 100px;
+}
+
+.botao {
+    background-color: white;
+    color: rgb(35, 121, 92);
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    transition: 0.4s;
+}
+
+.botao:hover {
+    background-color: rgb(162, 204, 190);
+}

@@ -1,0 +1,45 @@
+body {
+    color: white;
+    background-color: rgb(35, 121, 92);
+}
+
+img {
+    border-radius: 50px;
+    width: 100px;
+    margin: 10px;
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60pt;
+}
+
+tr > * {
+    border: solid rgb(10, 65, 46) 1px;
+    margin: 5px;
+    padding: 10px;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    background-color: white;
+    color: rgb(35, 121, 92);
+    border: solid rgb(10, 65, 46) 1px;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.4s;
+}
+
+a:hover {
+    background-color: rgb(173, 207, 196);
+}

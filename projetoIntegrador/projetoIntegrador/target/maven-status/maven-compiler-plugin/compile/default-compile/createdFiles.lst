@@ -1,0 +1,14 @@
+com\senac\projetoIntegrador\repository\UsuarioRepository.class
+com\senac\projetoIntegrador\repository\CausaRepository.class
+com\senac\projetoIntegrador\controller\mainController.class
+com\senac\projetoIntegrador\model\Campanha.class
+com\senac\projetoIntegrador\model\Usuario.class
+com\senac\projetoIntegrador\model\Causa.class
+com\senac\projetoIntegrador\repository\DoacaoRepository.class
+com\senac\projetoIntegrador\service\UsuarioService\UsuarioService.class
+com\senac\projetoIntegrador\ProjetoIntegradorApplication.class
+com\senac\projetoIntegrador\model\Doacao.class
+com\senac\projetoIntegrador\service\UsuarioService\CausaService.class
+com\senac\projetoIntegrador\service\UsuarioService\DoacaoService.class
+com\senac\projetoIntegrador\repository\CampanhaRepository.class
+com\senac\projetoIntegrador\service\UsuarioService\CampanhaService.class

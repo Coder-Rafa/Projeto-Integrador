@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns="http://www.w3.org/1999/xhmtl" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro - Doar+ Ação</title>
+        <link rel="stylesheet" th:href="@{/css/}+cadastro.css">
+    </head>
+    <body>
+        <img th:src="@{/css/logotipo.webp}" alt="logotipo">
+        <h1>Cadastrar</h1>
+        <form th:action="@{/cadastro}" method="POST">
+            <p>
+                <label for="nome">Nome: </label>
+                <input type="text" th:field="${usuario.nome}" id="nome" pattern="^[A-Za-zÀ-ÿ\s]+$" title="Você deve inserir ao menos um caractere e seu nome deve conter apenas letras">
+            </p>
+            <p>
+                <label for="email">Email: </label>
+                <input type="email" id="email" th:field="${usuario.email}">
+            </p>
+            <p>
+                <label for="senha">Senha: </label>
+                <input type="password" id="senha" th:field="${usuario.senha}">
+            </p>
+            <p>
+                <label for="idade">Idade: </label>
+                <input type="number" id="idade" min="18" max="150" th:field="${usuario.idade}">
+            </p>
+            <p><input type="submit" value="Cadastrar" class="botao"></p>
+        </form>
+    </body>
+</html>

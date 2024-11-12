@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Informações de usuário - Doar+ Ação</title>
+        <link rel="stylesheet" th:href="@{/css/}+info.css">
+    </head>
+    <body>
+        <img th:src="@{/css/logotipo.webp}" alt="logotipo">
+        <h1>Doar+ Ação</h1>
+        <p><a href="">Voluntariar-se</a><a href="">Doar</a></p>
+        <hr>
+        <h2>Campanhas</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="campanha : ${campanhas}">
+                    <th th:text="campanha.id"></th>
+                    <th th:text="campanha.nome"></th>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h2>Doações</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="causa : ${causas}">
+                    <th th:text="causa.id"></th>
+                    <th th:text="causa.nome"></th>
+                    <th th:text="causa.valor"></th>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
