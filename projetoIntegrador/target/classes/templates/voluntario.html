@@ -3,14 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Doação - Doar+ Ação</title>
+        <title>Serviço voluntário - Doar+ Ação</title>
         <link rel="stylesheet" th:href="@{/css/}+doacao.css">
     </head>
     <body>
-        <img th:src="@{/css/logotipo.webp}" alt="logotipo">
-        <h1>Doação</h1>
+        <img th:src="@{/images/logotipo.webp}" alt="logotipo">
+        <h1>Serviços voluntários</h1>
         <hr>
-        <h2>Causas disponíveis</h2>
+        <h2>Serviços disponíveis</h2>
         <table>
             <thead>
                 <tr>
@@ -20,23 +20,19 @@
                 </tr>
             </thead>
             <tbody>
-                <tr th:each="causa : ${causas}">
-                    <td th:text="${causa.id}"></td>
-                    <td th:text="${causa.nome}"></td>
-                    <td th:text="${causa.descricao}"></td>
+                <tr th:each="campanha : ${campanhas}">
+                    <td th:text="${campanha.id}"></td>
+                    <td th:text="${campanha.nome}"></td>
+                    <td th:text="${campanha.descricao}"></td>
                 </tr>
             </tbody>
         </table>
         <form th:action="@{/}" method="POST">
             <p>
-                <label for="idCausa">ID da Causa: </label>
+                <label for="idCampanha">ID da Campanha: </label>
                 <input type="number" id="idCausa" min="1">
             </p>
-            <p>
-                <label for="valor">Valor: </label>
-                <input type="number" id="valor" min="0">
-            </p>
-            <p><input type="submit" value="Doar" class="botao"></p>
+            <p><input type="submit" value="Voluntariar-se" class="botao"></p>
         </form>
     </body>
 </html>
